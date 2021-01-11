@@ -53,6 +53,7 @@ router.post('/add', function(req, res, next) {
             name: name,
             author: author
         }
+        // console.log(form_data)
         
         // insert query
         dbConn.query('INSERT INTO books SET ?', form_data, function(err, result) {
